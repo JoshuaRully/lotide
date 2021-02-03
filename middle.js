@@ -14,7 +14,9 @@ const assertArraysEqual = (arrayOne, arrayTwo) => {
 // middle function below
 const middle = (arr) => {
   const middleArr = [];
-  if (arr.length % 2 === 0) { // code block 'if' checks if length of array is even if it is it will find the index of both middle values
+  if (arr.length <= 2) {
+    return middleArr;
+  } else if (arr.length % 2 === 0) { // code block 'if' checks if length of array is even if it is it will find the index of both middle values
     let i = (arr.length / 2) - 1;
     middleArr.push(arr[i]);
     middleArr.push(arr[i + 1]);
@@ -28,3 +30,4 @@ const middle = (arr) => {
 // test cases below
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]);
+assertArraysEqual(middle([]), []);
