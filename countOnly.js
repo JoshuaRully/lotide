@@ -12,7 +12,6 @@ const countOnly = (allItems, itemsToCount) => {
   const results = {};
 
   for (const item of allItems) {
-    console.log(item);
     
     if (itemsToCount[item]) {
       if (results[item]) {
@@ -25,6 +24,7 @@ const countOnly = (allItems, itemsToCount) => {
   return results;
 };
 
+// tests below
 const firstNames = [
   'Karl',
   'Salima',
