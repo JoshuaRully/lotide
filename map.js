@@ -7,6 +7,9 @@ const map = (arr, callback) => {
   }
   return results;
 }
+
+module.exports = map;
+
 // test functions below
 const eqArrays = (arrayOne, arrayTwo) => {
   return Array.isArray(arrayOne) && Array.isArray(arrayTwo) && arrayOne.length === arrayTwo.length && arrayOne.every((val, index) => val === arrayTwo[index]);

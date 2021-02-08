@@ -26,6 +26,8 @@ const letterPositions = (string) => {
   return results;
 };
 
+module.exports = letterPositions;
+
 // tests below
 assertArraysEqual(letterPositions("hello").e, [1]);
 assertArraysEqual(letterPositions("coffee").f, [2, 3]);

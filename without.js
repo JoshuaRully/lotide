@@ -24,6 +24,8 @@ const without = (arr, filterArr) => {
   }
 };
 
+module.exports = without;
+
 // tests below
 assertArraysEqual(without([1, 2, 3, 4, 5, 3, 1, 4], [3, 1]), [2, 4, 5, 4]);
 const words = ["hello", "world", "lighthouse"];

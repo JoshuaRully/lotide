@@ -10,6 +10,8 @@ const takeUntil = (array, callback) => {
   return results;
 };
 
+module.exports = takeUntil;
+
 // test functions below
 const eqArrays = (arrayOne, arrayTwo) => {
   return Array.isArray(arrayOne) && Array.isArray(arrayTwo) && arrayOne.length === arrayTwo.length && arrayOne.every((val, index) => val === arrayTwo[index]);
