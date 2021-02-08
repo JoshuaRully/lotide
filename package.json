@@ -1,0 +1,26 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "A smaller, simpler version of lodash!",
+  "main": "assertEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaRully/lotide.git"
+  },
+  "author": "Joshua Rully",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaRully/lotide/issues"
+  },
+  "homepage": "https://github.com/JoshuaRully/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.2.1"
+  }
+}
